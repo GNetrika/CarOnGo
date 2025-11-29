@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Car On Go</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7f7f7;
+    font-family: "Inter", sans-serif;
+}
+
+/* Center section */
+.admin-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Admin card */
+.admin-card {
+    width: 420px;
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Title */
+.admin-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Subtitle */
+.admin-subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Buttons container */
+.admin-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ff4d4d;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    background: #ff2e2e;
+}
+
+/* Different button colors */
+.view-btn {
+    background: #0077ff;
+}
+
+.view-btn:hover {
+    background: #005fcc;
+}
+
+.booked-btn {
+    background: #6a5acd;
+}
+
+.booked-btn:hover {
+    background: #5846b6;
+}
+
+    </style>
+</head>
+<body>
+
+    <section class="admin-section">
+        <div class="admin-card">
+
+            <h1 class="admin-title">⚙️ Admin Dashboard</h1>
+            <p class="admin-subtitle">Manage your cars, bookings, and system controls effortlessly.</p>
+
+            <div class="admin-actions">
+
+                <a class="btn add-btn" href="addnewcar.html">➕ Add New Car</a>
+
+                <form action="seeallcars">
+                    <button class="btn view-btn">🚗 View All Cars</button>
+                </form>
+
+                <form action="seeallbookedcars">
+                    <button class="btn booked-btn">📘 View Booked Cars</button>
+                </form>
+                <form action="index.html">
+                    <button class="btn booked-btn">Back to Home</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

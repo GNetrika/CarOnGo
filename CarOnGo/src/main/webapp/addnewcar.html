@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Car - Admin Panel</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: url('images/admin-bg.jpg') center/cover no-repeat fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            background: rgba(255, 255, 255, 0.75);
+            padding: 60px;
+            border-radius: 15px;
+            width: 380px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            animation: fadeIn 0.8s ease;
+        }
+        .wrapper h1 span{
+          color: #ff4d4d;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        label {
+            font-size: 14px;
+            color: #444;
+            font-weight: 500;
+            display: block;
+            margin-top: 12px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #bbb;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            margin-top: 18px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #005ecc;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Add <span>New Car</span></h1>
+
+        <form action="addnewcar">
+
+            <label>Car Name</label>
+            <input type="text" name="carname" required>
+
+            <label>Model</label>
+            <input type="text" name="model" required>
+
+            <label>Price Per Day</label>
+            <input type="number" name="price" required>
+
+            <label>Owner</label>
+            <input type="text" name="owner" required>
+
+            <label>Car Number</label>
+            <input type="text" name="carno" required>
+
+            <button class="btn" type="submit">Add Car</button>
+        </form>
+    </div>
+
+</body>
+</html>

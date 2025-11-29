@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Panel - Car Rental</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: url('images/admin-bg.jpg') center/cover no-repeat fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 450px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 14px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            animation: fadeIn 0.8s ease;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #ff4d4d;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .caption {
+            font-size: 16px;
+            color: black;
+            font-weight: 600;
+            opacity: 0.8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            width: 90%;
+            padding: 14px;
+            border: none;
+            color: black;
+            font-weight: 600;
+            font-size: 17px;
+            margin-top: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .view-btn {
+            background: #ff4d4d;
+            box-shadow: 0 5px 12px rgba(255,0,0,0.4);
+        }
+
+        .view-btn:hover {
+            background: #ff3333;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: scale(0.85);}
+            to {opacity: 1; transform: scale(1);}
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Customer Dashboard</h1>
+
+        <!-- ⭐ Caption Below Title -->
+        <p class="caption">Explore the best rides available at your fingertips.</p>
+
+        <form action="seeallavailablecars">
+            <button class="btn view-btn">🚗 See Available Cars</button>
+        </form>
+        <form action="index.html">
+            <button class="btn view-btn">Go Back To Home</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
